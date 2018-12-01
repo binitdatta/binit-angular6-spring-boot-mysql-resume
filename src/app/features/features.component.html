@@ -1,0 +1,28 @@
+<!-- FEATURES -->
+
+<div class="features" id="features">
+    <div class="container">
+  
+      <div class="row">
+  
+        <h1>Career Summary</h1>
+  
+      </div>
+      <div class="row">
+        <div class=" wow bounceInLeft">
+          <table class="table table-bordered table-striped table-hover">
+            <tbody>
+            <tr *ngFor="let careersummary of careersummaries | async">
+              <td>
+                {{careersummary.careerSummaryDescription}}
+              </td>
+            </tr>
+  
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END FEATURES -->
+  
